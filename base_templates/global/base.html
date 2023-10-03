@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventário</title>
+</head>
+<body>
+    <div>
+        {% for item in object_list %}
+        <br>{{item.cod_patrimonio}} - {{item.user}} - {{item.typeitem}}</br>
+        {% endfor %}
+    </div>
+    
+</body>
+</html>
